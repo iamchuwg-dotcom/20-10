@@ -427,8 +427,13 @@
                 }, 600);
             }
         }
-
-        // Ấn Enter ở input nhập tên
-        document.getElementById('userNameInput').addEventListener('keypress', function (e) {
-            if (e.key === 'Enter') {
-                submitName();
+  
+       // Ấn Enter ở input nhập tên
+       document.getElementById('userNameInput').addEventListener('keydown', function (e) {
+           if (e.key === 'Enter') {
+               submitName();
+           }
+       });
+   </script>
+</body>
+</html>
